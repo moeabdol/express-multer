@@ -1,0 +1,31 @@
+{
+  "name": "express-multer",
+  "version": "1.0.0",
+  "description": "Example expressjs application backend that handles file uploads.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moeabdol/express-multer.git"
+  },
+  "keywords": [
+    "expressjs",
+    "fileupload"
+  ],
+  "author": "moeabdol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moeabdol/express-multer/issues"
+  },
+  "homepage": "https://github.com/moeabdol/express-multer#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "multer": "^1.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.6.1"
+  }
+}
