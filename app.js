@@ -1,21 +1,21 @@
-const express     = require("express");
-const bodyParser  = require("body-parser");
-const morgan      = require("morgan");
+const express     = require('express');
+const bodyParser  = require('body-parser');
+const morgan      = require('morgan');
 const app         = express();
-const usersRoutes = require("./routes/users");
+const usersRoutes = require('./routes/users');
 
-require("./config/mongoose");
+require('./config/mongoose');
 
-app.use(morgan("dev"));
+app.use(morgan('dev'));
 app.use(bodyParser.json());
 
-app.use("/", usersRoutes);
+app.use('/', usersRoutes);
 
-app.get("*", (req, res) => {
-  res.send("It works!");
+app.get('*', (req, res) => {
+  res.send('It works!');
 });
 
 app.listen(3000, (err) => {
   if (err) return console.log(err);
-  console.log("Listening of port 3000");
+  console.log('Listening of port 3000');
 });
