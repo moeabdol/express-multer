@@ -9,9 +9,6 @@ app.get("*", (req, res) => {
 });
 
 app.listen(3000, (err) => {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log("Listening of port 3000");
-  }
+  if (err) return console.log(err);
+  console.log("Listening of port 3000");
 });
