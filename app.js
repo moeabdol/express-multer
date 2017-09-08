@@ -7,6 +7,7 @@ const usersRoutes = require('./routes/users');
 require('./config/mongoose');
 
 app.use(morgan('dev'));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use('/', usersRoutes);
